@@ -1,0 +1,476 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: "Tenor Sans", sans-serif;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+a{
+    text-decoration: none;
+}
+.header-nav a{
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+text-align: left;
+margin: 10px;
+color: black;
+}
+#header{
+    padding: 40px 0;
+    position: sticky;
+    top: 0;
+    background: rgba(255, 255, 255, 0.613);
+    backdrop-filter: blur(5px);
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    animation: head 2s ease-in-out alternate;
+}
+@keyframes head {
+    0% {
+        transform: translatex(300px);
+    }
+}
+.header h1{
+    width: 135px;
+    height: 16px;
+    font-size: 30px;
+    font-weight: 800;
+}
+#hero{
+    padding: 60px 0;
+}
+.hero{
+    display: flex;
+    gap: 70px;
+}
+.hero img{
+    animation: img 2s ease-in-out alternate;
+}
+/* @keyframes img {
+    0% {
+      transform: translateX(-900px);
+    }
+    80%{
+        transform: rotate(180deg) scale(0.7);
+    }
+} */
+.hero-text{
+    animation: letter 2s ease-in-out alternate;
+}
+/* @keyframes letter{
+    0%{
+        transform: translateX(900px);
+    }
+} */
+.hero-text h4{
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 1px;
+color: #999999;
+}
+.hero-text h1{
+font-size: 36px;
+font-weight: 400;
+line-height: 42px;
+letter-spacing: 0em;
+padding: 10px 0;
+}
+.hero-text p{
+font-size: 16px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+padding: 10px 0;
+}
+.hero-text h3{
+font-size: 10px;
+font-weight: 700;
+line-height: 12px;
+letter-spacing: 1px;
+}
+
+#main{
+    padding: 60px 0;
+}
+.main-text img{
+    width: 400px;
+}
+.main-text h3{
+font-size: 10px;
+font-weight: 400;
+line-height: 12px;
+letter-spacing: 1px;
+color: #999999;
+padding: 10px 0;
+}
+.main-text h1{
+font-size: 20px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0em;
+padding: 10px 0;
+}
+.main-text h2{
+font-size: 10px;
+font-weight: 700;
+line-height: 12px;
+letter-spacing: 1px;
+}
+.main-text{
+    padding: 20px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+hr{
+    margin: 70px 0;
+}
+#posts{
+    padding: 20px 0;
+}
+.post-main{
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    padding: 30px 0;
+}
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.post img{
+    width: 100%;
+    transition: 2s;
+}
+.post img:hover{
+    transform: scale(1.1);
+    z-index: 2;
+}
+.post h2{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #999999;
+}
+.post h1{
+    font-family: Tenor Sans;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    padding: 10px 0;   
+}
+.post h3{
+   font-size: 10px;
+   font-weight: 700;
+   line-height: 12px;
+   letter-spacing: 1px;
+}
+.btn button{
+    border: 2px solid rgba(231, 224, 224, 0.562);
+    background-color: white;
+    width: 205px;
+    height: 54px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px;
+    margin-left: 500px;
+    text-transform: uppercase;
+    transition: 1s ;
+}
+.btn button:hover{
+    background: black;
+    border: 1px solid black;
+    color: white;
+    transform: scale(1.2);
+    z-index: 2;
+}
+.btn button::before{
+    position: absolute;
+    content: "";
+    background: red;
+    z-index: -1;
+    animation: button 2s linear infinite;
+}
+.btn button:hover::before{
+    width: 205px;
+    height: 54px;
+}
+@keyframes button {
+    50%{
+        filter: hue-rotate(350deg);
+    }
+}
+
+
+
+
+#new-posts{
+    padding: 50px 0;
+}
+.new-post-main{
+    font-family: Libre Franklin;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #999999;
+    text-transform: uppercase;    
+}
+.new-posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.new-post img{
+    width: 590px;
+    padding: 30px 0 10px 0;
+}
+.new-post h2{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    color: #999999;   
+    text-transform: uppercase;
+}
+.new-post h1{
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-transform: uppercase;
+    padding: 20px 0;
+}
+.new-post h3{
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-transform: uppercase; 
+}
+#footer{
+    background: black;
+    padding: 100px 0 10px 0;
+}
+.footer-logo h1{
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #666666;
+    text-transform: uppercase;
+    padding-top: 10px;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.category h1{
+    color: #999999;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;    
+}
+.category p{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    padding: 10px 0;
+}
+.category input{
+    width: 221px;
+    height: 48px;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+.footer-categories{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.links{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+   gap: 150px;
+}
+.link h1{
+    color: #666666;
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 1px;
+    text-align: left;
+    text-transform: uppercase; 
+    padding: 20px 0;
+}
+.link a{
+    color: white;
+    display: block;
+    padding: 10px 0;
+}
+
+
+/* сайт ширинасынан кичирейиши мумукун бирок высотасынан эч качан кичирейбейт 
+канча ширина кичирейген сайын высото узарып кете берет*/
+@media(max-width: 768px) {
+    .hero{
+        gap: 30px;
+    }
+    .hero img{
+        width: 47%;
+    }
+    .main-text{
+        width: 40%;
+    }
+    .main-text img{
+        width: 100%;
+    }
+    .btn button{
+        margin-left: 200px;
+    }
+}
+@media (max-width:678px) {
+    .header h1{
+        font-size: 24px;
+    }
+    .hero{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .hero img{
+        width: 80%;
+    }
+    .btn button{
+        width: 170px;
+        height: 40px;
+    }
+    .footer-categories{
+        flex-wrap: wrap;
+    }
+    .category {
+        margin: 20px 0;
+    }
+}
+@media (max-width:576px) {
+    .post{
+        width: 40%;
+        text-align: center;
+    }
+    .post img{
+        width: 100%;
+        margin: 10px;
+    }
+    #main{
+        padding: 5px 0;
+    }
+    .new-post{
+        text-align: center;
+    }
+    .new-post img{
+        width: 500px;
+    }
+    .links{
+        padding: 15px 0;
+        gap: 80px;
+
+    }
+}
+@media (max-width:476px) {
+    .header h1{
+      font-size: 18px ;
+    }
+    .header-nav a{
+        font-size: 10px;
+    }
+    .hero img{
+        width: 100%;
+    }
+    .hero-text h1{
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .main-text img{
+        width: 115%;
+    }
+    .main-text{
+        text-align: center;
+    }
+    .main-text h1{
+        font-size: 10px;
+        line-height: 10px;
+        padding: 7px 0;
+    }
+    .main-text h3{
+        padding: 5px 0;
+    }
+    
+    .post h1{
+        font-size: 14px;
+        line-height:18px;
+    }
+    .post img{
+       margin-top: 30px;
+    }
+    .post h3{
+        font-size: 7px;
+        font-weight: 300;
+        letter-spacing: 0px;
+    }
+    .btn button{
+        margin-left: 150px;
+    }
+    .new-post img{
+        width: 430px;
+    }
+    .new-post h1{
+        font-size: 10px;
+        padding: 10px 0;
+    }
+    .footer-logo{
+        flex-direction: column;
+    }
+    .footer-categories{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

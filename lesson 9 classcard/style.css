@@ -1,0 +1,552 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    background-color: rgba(0, 0, 0, 0.925);
+}
+a{
+    text-decoration: none;
+}
+#header{
+    background-color: white;
+    padding: 30px 0;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     /* 
+    сайттын хедери сайттын астына тушкондо да кошо
+    тушуш учун; любой бир название беребиз канча секунд иштеши жана плавно(жай) иштеши учун
+     alternate - 1 жолу иштейт
+    infinite - бесконечно иштейт
+    */
+    animation: head 1s ease-in-out alternate;
+}
+/* бул анимацияны иштетиш учун;
+анимация 0% тен 100%ке чейин иштейт сайтка киргенде бул - 0%
+ал эми 3секунда иштеп буткондо бул 100%*/
+@keyframes head {
+    0% {
+        /* бул горизонтально иштейт сол жактан келиши учун алдына -1000 коёбуз 
+        ойдодон келиш учун х-тын ордуна у- коёбуз*/
+        /* transform: translateУ(1000px); */
+        transform: translateX(300px);
+    }
+}
+.header-left{
+    display: flex;
+    align-items: center;
+}
+.header a{
+    font-size: 16px;
+    color: #121118;
+    margin-left: 50px;
+}
+
+
+#hero{
+    padding: 60px 0;
+}
+.hero h1{
+   font-size: 63px;
+   font-weight: 400;
+   line-height: 73px;
+   letter-spacing: 2.880000114440918px;
+   color: white;
+}
+.hero h4{
+font-size: 28px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0.41999998688697815px;
+color: rgba(255, 255, 255, 0.301);
+}
+.hero button{
+    padding: 15px, 35px;
+    border-radius: 8px;
+    border: none;
+    background: #FF4343;
+    font-size: 23px;
+    color: white;
+    font-weight: 500;
+    width: 281px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.hero p{
+    font-size: 14px;
+    color: white;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+.hero-img{
+    position: relative;
+}
+.heroLeft{
+    animation: heroLeft 2s ease-in-out alternate;
+}
+
+@keyframes heroLeft{
+    0% {
+        transform: translateX(-1000px);
+    }
+}
+.heroRight{
+    animation: heroRight 2s ease-in-out alternate;
+}
+@keyframes heroRight{
+    0% {
+        transform: translateX(500px);
+    }
+   80% {
+    transform: rotate(180deg) scale(1.3);
+   }
+   /* 180градуска айланып ордуна туруш учун (scale(1.3)) - чоноюп ордуна келиш учун;
+   (scale(0.2)) - кичирейип ордуна келиш учун */
+}
+.hero-phone{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#shoot{
+    padding: 50px 0;
+}
+.shoot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.shoot-left h1{
+    font-family: Roboto;
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 1.9199999570846558px;
+    color: white;
+}
+.shoot-left p{
+font-size: 26px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 1.0800000429153442px;
+color: rgba(255, 255, 255, 0.209);
+margin-top: 20px;
+}
+.shoot-right{
+    position: relative;
+}
+.shoot-phone{
+    position: absolute;
+    top: 0;
+    right:  -35px;
+}
+
+
+#part{
+    padding: 30px 0;
+}
+.part{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.part-text h1{
+color: white;
+font-size: 58px;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: 1.9199999570846558px;
+}
+.part-text p{
+color: rgba(255, 255, 255, 0.209);
+font-size: 27px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 1.0800000429153442px;
+text-align: left;
+margin: 30px 0;
+}
+.part-text p span{
+font-family: Roboto;
+font-size: 27px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 1.0800000429153442px;
+text-align: left;
+color: white;
+}
+
+
+#main{
+    padding: 300px 0;
+}
+.main-left h1{
+font-size: 54px;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: 3.200000047683716px;
+text-align: left;
+color: white;
+}
+.main-left p{
+    font-weight: 526px;
+    font-size: 27px;
+    line-height: 37.8px;
+    color: rgba(255, 255, 255, 0.336);
+    padding: 30px 0;
+}
+.main-left p span{
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 37.8px;
+    color: white;
+}
+.main{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+#share{
+    padding: 200px 0;
+}
+.share-text h1{
+    color: white;
+font-size: 58px;
+font-weight: 400;
+line-height: 70px;
+letter-spacing: 1.9199999570846558px;
+text-align: left;
+}
+.share-text p{
+    color: rgba(255, 255, 255, 0.366);
+    font-family: Roboto;
+font-size: 25px;
+font-weight: 700;
+line-height: 38px;
+letter-spacing: 1.0800000429153442px;
+text-align: left;
+padding: 30px 0;
+}
+.share-text p span{
+    color: white;
+font-family: Roboto;
+font-size: 25px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 1.0800000429153442px;
+text-align: left;
+}
+.share{
+    display: flex;
+    align-items: center;
+   gap: 150px;
+}
+
+#craft{
+    padding: 70px 0;
+}
+.craft-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.craft-head h1{
+    color: white;
+font-size: 61px;
+font-weight: 400;
+line-height: 83px;
+letter-spacing: 2.559999942779541px;
+text-align: center;
+}
+.line{
+    background-color: red;
+    width: 120px;
+    height: 5px;
+    margin: 20px 0;
+}
+.craft-head p{
+    color: rgba(255, 255, 255, 0.356);
+font-size: 26px;
+font-weight: 400;
+line-height: 38px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+}
+.craft-photo{
+    padding: 60px 0;
+}
+
+
+.offer-head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.offer-head a{
+font-size: 22px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+color:#8BFFB0;
+}
+.offer-head h1{
+    color: white;
+font-size: 58px;
+font-weight: 400;
+line-height: 83px;
+letter-spacing: 1.9199999570846558px;
+text-align: center;
+}
+.offer-head p{
+font-size: 27px;
+font-weight: 400;
+line-height: 39px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+color: rgba(255, 255, 255, 0.332);
+padding: 30px 0px;
+}
+.mainImg{
+    animation: user 3s ease-in-out infinite;
+}
+@keyframes user{
+    0%{
+        opacity: 0.2;
+    }
+    50% {
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.3;
+    }
+}
+
+
+
+
+.block{
+    position: relative;
+}
+.block-text{
+    position: absolute;
+    top: 300px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.block-text h2{
+    color: #fff;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34.8px;
+    text-align: center;
+}
+.block-text p{
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    line-height: 30px;
+}
+.blocks{
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    overflow-x: scroll;
+}
+
+
+
+
+.teach{
+    background-color: black;
+    height: 433px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 40px;
+}
+.teach h1{
+color: white;
+font-size: 63px;
+font-weight: 400;
+line-height: 91px;
+letter-spacing: 2.0999999046325684px;
+text-align: center;
+}
+.teach p{
+    color: rgba(255, 255, 255, 0.36);
+font-size: 27px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+
+}
+.teach button{
+width: 281px;
+height: 66px;
+border: none;
+background-color:  #FF4343;
+font-size: 23px;
+font-weight: 400;
+line-height: 26px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+color: white;
+}
+.teach-img h1{
+font-size: 42px;
+font-style: italic;
+font-weight: 700;
+line-height: 49px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+color: #fff;
+padding: 100px 0 30px;
+}
+.teach-img p{
+    font-family: Roboto;
+font-size: 23px;
+font-weight: 400;
+line-height: 30px;
+letter-spacing: 0.41999998688697815px;
+text-align: center;
+color: white;
+}
+.teach-img{
+background: url(./img/teach-img.png) no-repeat  ;
+width: 100%;
+height: 432px;
+}
+
+
+
+#card{
+    padding: 100px 0;
+}
+.card-right h3{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.23999999463558197px;
+    text-align: left;
+    color: white;
+    padding: 10px 0;
+}
+.card-right h1{
+font-size: 29px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: 0.41999998688697815px;
+text-align: left;
+color: white;
+margin: 10px 0;
+}
+.card-right p{
+    color: white;
+    padding: 10px 0;
+}
+.card{
+    background: #8BFFB0;
+    width: 650px;
+    height: 430px;
+    position: relative;
+}
+.card-right{
+    position: absolute;
+    top: 0;
+    left: 320px;
+}
+.card-left{
+    position: relative;
+    position: absolute;
+    bottom: -5px;
+}
+.card-text{
+    position: absolute;
+    top: 370px;
+    left: 20px;
+}
+.card-text h2{
+    color: #fff;
+}
+.card-text p{
+    color: #fff;
+    margin: 10px 0;
+}
+.card-arrow{
+    position: absolute;
+    left: 100px;
+    bottom: -100px;
+    color: #fff;
+}
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#footer{
+    padding: 50px 0;
+}
+.footer-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer-text{
+    /* position: relative;
+    top: 83px; */
+    padding-top: 100px;
+}
+.footer-text h3{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0.18000000715255737px;
+    text-align: left;
+    padding-bottom: 50px;
+}
+.footer-text p{
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.1599999964237213px;
+    text-align: left;
+}
+.footer-icon a{
+    color: white;
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}

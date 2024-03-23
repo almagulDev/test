@@ -1,0 +1,74 @@
+
+
+
+.btn1{
+    padding: 12px 40px;
+    background: red;
+    color: white;
+    border-radius: 8px;
+    border: none;
+     /* бирок бул абдан бат иштеп жатат плавно куйуп иштеши учун */
+   transition: 0.8s;
+}
+
+/* бул псевдо класс качан мышты алып барганда гана иштейт */
+.btn1:hover{
+    /* курсорду алып барганда ичиндеги жазуу кызыл болсун десек */
+    color: red;
+    border: 2px solid red;
+    /* курсорду алып барганда кнопка чоноет (1.1(1.3) же 1 ден чон сан болсо
+    элемент алдыга чыгат;
+    (-1.1-1.5) деп терс сан мн берсек кичирейет */
+    transform: scale(1.1);
+    /* курсорду ошол button-га алып барганда тусу озгорот */
+    /* background: blue; */
+    /* background - прозрачный кылуунун 3 жолу бар */
+   /* background: transparent;
+   background: none; */
+   background: 0;
+}
+
+
+
+
+.btn2{
+    padding: 12px 40px;
+    background: yellow;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+/* бул качан мышканы кнопкага алып барып басканда иштейт 
+мышканы кое берсе очуп калат */
+.btn2:active{
+    color: yellow;
+    border: 2px solid yellow;
+    transform: .8s;
+    background: none;
+}
+
+
+
+
+
+.btn3{
+    padding: 12px 40px;
+    background: green;
+    color: white;
+    border-radius: 8px;
+    border: none;
+}
+/* мында 1 жолу басып койсок иштеп тура берет качан гана башка жакты бассак ал очот */
+.btn3:focus{
+    color:green;
+    border: 2px solid green;
+    transform: .8s;
+    background: none;
+}
+.center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* div-тин ичинде канча элемент болсо ошолордун арасына аралык берет */
+    gap: 30px;
+}

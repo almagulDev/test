@@ -1,0 +1,21 @@
+
+
+body{
+    background: black;
+}
+
+/* озунчо турган 2 - div-тин родителине; display flex - берип койсом ичиндеги элементти 
+бир катарга жыйнап коет*/
+.home{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.home1{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+}

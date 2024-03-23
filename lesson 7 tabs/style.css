@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+body{
+    background: pink;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+
+.hero img{
+    width: 23%;
+}
+
+.hero input{
+    display: none;
+}
+
+#html:checked ~ .css,
+#html:checked ~ .javascript,
+#html:checked ~ .react{
+    /* display: none; */
+    opacity: 0.1;
+    transition: 1s;
+}
+
+#css:checked ~ .html,
+#css:checked ~ .javascript,
+#css:checked ~ .react{
+   opacity: 0.1;
+   transition: 1s;
+}
+
+#javascript:checked ~ .html,
+#javascript:checked ~ .css,
+#javascript:checked ~ .react{
+    opacity: 0.1;
+}
+
+#react:checked ~ .html,
+#react:checked ~ .css,
+#react:checked ~ .javascript{
+    opacity: 0.1;
+}
+
+.labels label{
+    font-size: 24px;
+    margin: 0 30px; 
+    background: red;
+    color: azure;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}

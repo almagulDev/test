@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 1140px;
+    margin: 0 auto;
+}
+body{
+    background: pink;
+}
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 50px 0;
+}
+.hero img{
+    width: 18%;
+}
+.hero input{
+    display: none;
+}
+
+#pizza:checked ~ .desserts,
+#pizza:checked ~ .coffee{
+    display: none;
+}
+#desserts:checked ~ .pizza,
+#desserts:checked ~ .coffee{
+    display: none;
+}
+#coffee:checked ~ .pizza,
+#coffee:checked ~ .desserts{
+    display: none;
+}
+
+.categories label{
+    font-size: 24px;
+    margin: 0 30px; 
+    background: red;
+    color: azure;
+    padding: 8px 14px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pizza {
+   padding: 30px 0;
+   cursor: pointer;
+}

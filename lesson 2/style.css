@@ -1,0 +1,72 @@
+
+
+/* h1 {
+    text-align: center;
+    text-emphasis: none;
+    color: red;
+    /* шрифтеги лишний хвостиктерди алып коюш учун */
+    /* font-family: sans-serif; */
+    /* размер шрифта */
+    /* font-size:30px; */
+    /* масса, толщина шрифта, муну биз px менен бербейбиз 100-900 го чейин бере алабыз */
+    /* font-weight: 700; */
+    /* отступ между буквами */
+    /* letter-spacing: 10px; */
+    /* отступ между строками */
+    /* line-height: 100px; */
+    /* lovercase - бардык тамгалар кичине болот, uppercase -  бардык тамгалар чон болот */
+    /* text-transform:uppercase; */
+    /* баш тамгалар чон болот */
+    /* text-transform: capitalize; */
+/* }  */
+
+.title {
+    color: blueviolet;
+}
+
+.text{
+    color: chocolate;
+}
+
+
+button {
+    color: white;
+    background: green;
+    font-size: 24px;
+    /* ширина */
+    width: 130px;
+    /* высота */
+    height: 50px;
+    text-transform: uppercase;
+    /*овальный болот, кнопканын уголдору жок болуп более гладко  приятно корунот */
+    border-radius: 10px;
+    /* чекесиндеги кара бордерди алып койсок болот */
+    /* border: none; */
+    /* же тус берип койсок болот 3px-толщинасы;   solid,dashed,dotted-стили */
+    border: 3px solid blue;
+    /* мышканы кнопкага алып барганда озгоруусу учун */
+    cursor: pointer;
+}
+
+img {
+    width: 400px;
+    height: 200px;
+    /* бул элементти четко корсотот бирок контенттин какой то части терять болот */
+    /* object-fit: cover; */
+    /* размери кичирейет */
+    object-fit: contain;
+    /* суротту наоборотунан кою 45-60-90 процентке койсо болот*/
+    transform: rotate(180deg);
+}
+
+body {
+    /* артына тус беруу */
+    /* background-color: blueviolet; */
+    /* артына сурот кою */
+    /* background: url("https://media.wired.co.uk/photos/606dafcb646b991cdbf603f1/master/w_1600%2Cc_limit/space_11.jpg") */
+    /* no repeat,center/cover */
+    /* артына бир канча тус берсе болот,тустоорду диогонально чачыратса болот ал учун 
+    градусту кошуп жазыш кк, градус - deg */
+    background: linear-gradient(45deg,red, yellow, pink, yellowgreen, blue);
+    min-height: 100vh;
+}

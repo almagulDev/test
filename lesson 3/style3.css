@@ -1,0 +1,50 @@
+
+/* круглый болсун десек width and height бирдей болуп,border radius-
+50% болушу керек */
+.number1{
+    width: 200px;
+    height: 200px;
+    background: green;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number2{
+    width: 200px;
+    height: 200px;
+    background: red;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.number3{
+    width: 200px;
+    height: 200px;
+    background: blue;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.blocks{
+    display: flex;
+    justify-content: space-around;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+body{
+    background: violet;
+}
