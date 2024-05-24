@@ -9,7 +9,9 @@
 a {
     text-decoration: none;
 }
-
+body{
+    font-family: "Heebo", sans-serif;
+}
 .container{
     width: 1140px;
     margin: 0 auto
@@ -24,7 +26,17 @@ padding - берип коем*/
 .header{
     display: flex;
     align-items: center;
-   justify-content: flex-end;
+    justify-content: flex-end;
+}
+.header a{
+    font-size: 20px;
+    font-weight: 500;
+}
+.header a:hover{
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    transition: .5s;
+    color: grey;
 }
 
  .hero img{
@@ -54,38 +66,53 @@ margin-left: 40px;
     /* горизонтально чачыратып койуу */
     justify-content: space-between;
 }
+.hero{
+    animation: user 2s ease-in-out alternate;
+}
+@keyframes user{
+    0%{
+        transform: translateX(500);
+    }
+}
 .hero-text h1{
-font-size: 44px;
-font-weight: 700;
-line-height: 60px;
-color:#21243D;
+    font-size: 44px;
+    font-weight: 700;
+    line-height: 60px;
+    color:#21243D;
 }
 .hero-text p{
-font-size: 16px; 
-font-weight: 400;
- line-height: 24px;
-padding: 25px 0;
+    font-size: 16px; 
+    font-weight: 400;
+    line-height: 24px;
+    padding: 25px 0;
 }
  button{
-
- width: 208px;
-height: 47px;
-top: 477px;
-left: 148px;
-border-radius: 2px;
-font-size: 20px;
-font-weight: 500;
-background: #FF6464;
-border-radius: 2px;
-color: white;
-border:none;
+    width: 208px;
+    height: 47px;
+    top: 477px;
+    left: 148px;
+    border-radius: 2px;
+    font-size: 20px;
+    font-weight: 500;
+    background: #FF6464;
+    border-radius: 2px;
+    color: white;
+    border:none;
+}
+button:hover{
+    background-color: #ff6464c1;
+    text-transform: lowercase;
 }
 
 
 
 
 
-
+#blocks{
+    height: 396px;
+    padding: 30px 0 ;
+    /* background-color:#EDF7FA; */
+   }
 .text{
     display: flex;
     justify-content: space-between;
@@ -95,114 +122,176 @@ border:none;
     font-size: 22px;
     font-weight: 400;
 }
-.text a{
-padding-right: 10px;
-font-size: 16px;
-font-weight: 400;
-text-align: right;
-color: #00A8CC;
-width: 208px;
-
-}
 .block h1{
 font-size: 26px;
 font-weight: 700;
 line-height: 38px;
+padding-top: 10px;
+padding-left: 10px;
 }
 .block h4{
 font-size: 18px;
 font-weight: 400;
 line-height: 26px;
-padding: 20px 0;
+padding-top: 20px;
+padding-left: 10px;
+padding-bottom: 20px;
 }
 .block p{
 font-size: 16px;
 font-weight: 400;
 line-height: 24px;
+padding-left: 10px;
 }
 .blocks{
     display: flex;
-    justify-content: space-between;
-   padding: 30px ;
-   background: white;
-}
-#blocks{
- height: 396px;
- top: 595px;
- background: #EDF7FA;
- padding: 30px 0 ;
-}
-
-
-
-
-#group{
-    padding: 10px;
-}
-.text h3{
-font-size: 22px;
-font-weight: 400;
-line-height: 60px;
-letter-spacing: 0px;
-text-align: left;
-
-}
-.group-text {
-    display: flex;
+    gap: 140px;
     padding: 30px 0;
-   /* align-items: center;
-   justify-content: space-between; */
-   
 }
-.texts{
- padding-left: 30px;
+.block{
+    width: 418px;
+    height: 265px;
+    border-radius: 4px;
+    background-color: #21243d43;
 }
-.texts h1{
-font-size: 30px;
-font-weight: 700;
-;
+.block-2{
+    width: 418px;
+    height: 265px;
+    border-radius: 4px;
+    background-color: #21243d43;
 }
- span{
-    font-family: Heebo;
+.block-2 h1{
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 38px;
+    padding-top: 10px;
+    padding-left: 10px;
+    }
+.block-2 h4{
     font-size: 18px;
-    font-weight: 900;
-    line-height: 60px;
-    color: #fff;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 20px;
+    padding-left: 10px;
+    padding-bottom: 20px;
+}
+ .block-2 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    padding-left: 10px;
+ }
+
+
+
+
+
+
+
+#works{
+    padding: 50px 0;
+}
+.works h1{
+    font-size: 22px;
+    font-weight: 400;
+}
+.work{
+    padding: 40px 0;
+    display: flex;
+    gap: 40px;
+}
+.work-1 h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #21243D; 
+}
+.work-1 p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.5px; 
+}
+.year{
+    display: flex;
+    gap: 40px;
+    padding: 20px 0;
+}
+.year h3{
     width: 62px;
     height: 25px;
-    top: 1372px;
-    left: 410px;
     border-radius: 16px;
-    background: #142850;
+    background-color: #142850;
+    font-size: 18px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
 }
-a {
-font-size: 20px;
-font-weight: 400;
-color: #8695A4;
-padding: 30px;
-}
-hr{
-width: 858px;
-top: 1283px;
-left: 146px;
-border: 1px;
-border: 1px solid #E0E0E0;
+.year h4{
+    font-size: 20px;
+    font-weight: 400;
+    color: #8695A4; 
 }
 
 
-.footer{
-    display: flex;
-    justify-content: center;
-    padding-right: 250px;
-   
+
+
+#footer{
+    padding: 70px 0;
 }
-.footer a{
-    text-decoration: none;
-    padding: 100px 0;
-    margin: 10px;
+.footer p{
+    padding-left: 400px;
+    padding-top: 30px;
+}
+.icons{
+    padding-left: 400px;
+}
+.icons a img{
     width: 30px;
     height: 30px;
-    top: 51px;
-    left: 459px
+    padding-right: 35px;
+    transition: .5s;
+}
+.icons a img:hover {
+    transform: scale(1.2);
 }
 
+
+
+@media(max-width:1200px){
+    .blocks {
+        gap: 295px;
+    }
+}
+@media(max-width: 1024){
+   .header{
+    justify-content: center;
+   }
+}
+@media (max-width: 900px) {
+    .blocks {
+        gap: 56px;
+    }
+    .header {
+        justify-content: center;
+    }
+    .hero img {
+        margin-right: 250px;
+    }
+    .text a {
+        text-align: center;
+    }
+    .icons {
+        padding-left: 331px;
+    }
+    .footer p {
+        padding-left: 325px;
+        padding-top: 30px;
+    }
+}
+@media(max-width: 768px){
+    .hero img {
+        margin-right: 37px;
+    }
+    .blocks {
+        gap: 274px;
+    }
+}
